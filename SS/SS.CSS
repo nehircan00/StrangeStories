@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  body{
+    display:grid;
+    height: 100vh;
+    width: 100vh;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 4fr;
+    grid-template-areas:
+      "header"
+      "article"
+      ;  
+      background-image: url(sherlock\ holmes.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+    
+  header{
+      grid-area: header ;   
+      z-index: -1;  
+       display:flex;
+
+
+  }  
+  header > ul {
+    width: 100vw;
+    display:flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    list-style-type: none;
+    color: #000;
+  }
+
+  .konular{
+    color: #000;
+  }
+
+  .banaUlasin{
+    color: #000;
+  }
+  
+  header > ul >li{
+     margin: 5px; 
+     font-family:"bungee Inline",cursive;
+     color: #000;
+  }
+  header > ul  > li > a{
+    font-weight: bolder;
+    text-decoration: none;
+}
+  .h2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+  }
+  .SS{
+    order: 1;
+    text-decoration: none;
+    color: #000;
+  }
+  article{
+    grid-area: article;
+  }
+  
+    
